@@ -1,0 +1,17 @@
+{
+  "name": "niver_pedro",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon --watch src --ext js,html,scss --delay 1500ms --exec \"parcel src/index.html src/styles/main.scss src/scripts/main.js\"",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "nodemon": "^3.1.9",
+    "parcel": "^2.14.4"
+  }
+}
