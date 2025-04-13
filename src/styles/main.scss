@@ -2,6 +2,7 @@
 @use 'hero';
 @use 'elements/bar-info';
 @use 'elements/button';
+@use 'event';
 
 * {
     padding: 0;
@@ -12,17 +13,24 @@
     font-weight: 400;
     font-style: normal;
     color: $corDeTexto;
-    list-style: none;    
+    list-style: none;
+
+    
 }
+
+
+
 
 body {
     background-color: $corDeFundo;
+            position: relative;
 }
 
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+
     
 
     @media (max-width: 1024) {
@@ -31,6 +39,20 @@ body {
 
     @media (max-width: 640px) {
         max-width: 80%;
+        
+        .text--title {
+            font-size: 22px;
+            margin: 8px 0;
+            line-height: 24px;
+        }
+
+        .text--small {
+            font-size: 18px;
+        }
+        
+        .text--small_2 {
+            font-size: 16px;
+        }
     }
 }
 
@@ -46,4 +68,8 @@ body {
 
 .text--small_2 {
     font-size: 24px;
+}
+
+.text--black {
+    color: $secondaryTextColor;
 }

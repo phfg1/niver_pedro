@@ -21,4 +21,18 @@
             }
         }
     }
+
+    @media (max-width: 640px) {
+        display: block;
+        text-align: center;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+
+    }
 }

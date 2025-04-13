@@ -40,4 +40,21 @@
         height: 180px;
         display: block;
     }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 100px;
+        }
+
+        &__infos__text {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 12px 0;
+
+        }
+
+
+    }
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reggae+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <header class="hero">
@@ -21,7 +22,7 @@
                     Venha com a gente curtir essa vibe!
                 </p>          
                 <p class="hero__infos__text text--small_2">
-                    Faltam: 
+                    Faltam: <span id="contador"></span>
                 </p>      
             </div>
             <div class="bar-info">
@@ -43,6 +44,53 @@
             </div>
         </div>
     </header>
+    <div class="overlay">
+        <section class="event event--aniversariantes">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Aniversariantes</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas molestias magni quasi. Animi nostrum dicta provident temporibus qui dolorum cum pariatur, nulla perspiciatis expedita, vel necessitatibus, rem recusandae nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem obcaecati, harum, nihil, id tenetur ea impedit dolor amet magni ad doloribus quam odit? Temporibus alias dicta voluptate doloremque modi?
+                    </p>
+                </div>
+                <img class="event__image" src="images/musico_reggae.png" alt="Musico estilo Reggae">
+            </div>
+        </section>
+        <section class="event event--atracoes event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details ">
+                    <h2 class="event__details__title">Atrações Confirmadas</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas molestias magni quasi. Animi nostrum dicta provident temporibus qui dolorum cum pariatur, nulla perspiciatis expedita, vel necessitatibus, rem recusandae nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem obcaecati, harum, nihil, id tenetur ea impedit dolor amet magni ad doloribus quam odit? Temporibus alias dicta voluptate doloremque modi?
+                    </p>
+                </div>
+                <img class="event__image" src="images/violão_reggae.png" alt="Musico estilo Reggae">
+            </div>
+        </section>
+        <section class="event event--bar">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title text--black">Open Bar</h2>
+                    <p class="event__details__description text--black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas molestias magni quasi. Animi nostrum dicta provident temporibus qui dolorum cum pariatur, nulla perspiciatis expedita, vel necessitatibus, rem recusandae nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem obcaecati, harum, nihil, id tenetur ea impedit dolor amet magni ad doloribus quam odit? Temporibus alias dicta voluptate doloremque modi?
+                    </p>
+                </div>
+                <img class="event__image" src="images/bob_marley_coracao.png" alt="Musico estilo Reggae">
+            </div>
+        </section>
+        <section class="event event--trucks event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title text--black">Food Trucks Confirmados</h2>
+                    <p class="event__details__description text--black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas molestias magni quasi. Animi nostrum dicta provident temporibus qui dolorum cum pariatur, nulla perspiciatis expedita, vel necessitatibus, rem recusandae nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem obcaecati, harum, nihil, id tenetur ea impedit dolor amet magni ad doloribus quam odit? Temporibus alias dicta voluptate doloremque modi?
+                    </p>
+                </div>
+                <img class="event__image" src="images/bob_marley.png" alt="Musico estilo Reggae">
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
