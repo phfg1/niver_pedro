@@ -1,0 +1,43 @@
+@use './elements/variables.scss' as *;
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    .container {
+        position: relative;
+        height: 640px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $corDeFundo;
+        content: '';
+        opacity: .75;
+    }
+
+    &__infos {
+        margin-top: 32px;
+        margin-bottom: 64px;
+        text-align: center;
+    }
+
+    p {
+        padding-bottom: 12px;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 180px;
+        display: block;
+    }
+}
