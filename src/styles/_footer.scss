@@ -1,0 +1,28 @@
+.footer {
+
+    .container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__text {
+        margin: 0 auto;
+        text-align: center;
+        
+        &__direitos {
+            font-size: 12px;
+            padding-top: 24px;
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60px;
+    }
+}
